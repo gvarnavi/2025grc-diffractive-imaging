@@ -1,0 +1,106 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: gvarnavides-2025grc-diffractive-imaging
+  title: 2025 GRC | Diffractive Imaging with Electrons
+  description: Interactive presentation on diffractive imaging for cryo-EM, presented by Georgios Varnavides.
+  short_title: Diffractive Imaging
+  keywords:
+    - Electron Microscopy
+    - Diffractive Imaging
+    - Phase Retrieval
+  github: https://github.com/gvarnavi/2025grc-diffractive-imaging
+  jupyter: true
+  # jupyter:
+  #   server:
+  #     url: 'http://localhost:8888'
+  #     token: '512ac78f14e1141db1fac17e8b4099c1e5bc7d589518b38c'
+  open_access: true
+  license: CC-BY-4.0
+  date: 2025-06-14
+  requirements:
+    - 'Dockerfile'
+    - requirements.txt
+  resources:
+    - 'notebooks/**/*'
+  exports:
+    - format: meca
+  exclude:
+    - README.md
+  authors:
+    - id: gvarnavides
+      name: Georgios Varnavides
+      email: gvarnavides@berkeley.edu
+      orcid: 0000-0001-8338-3323
+      affiliations:
+        - id: miller
+          department: Miller Institute for Basic Research in Science
+          institution: University of California, Berkeley
+          address: 468 Donner Lab, Berkeley, CA, USA, 94720
+          ror: 01an7q238
+      roles:
+        - Conceptualization
+        - Funding acquisition
+        - Project administration
+        - Software
+        - Validation
+        - Visualization
+        - Writing - original draft
+  abbreviations:
+    TEM: transmission electron microscopy
+    HRTEM: high resolution transmission electron microscopy
+    STEM: scanning transmission electron microscopy
+    4D-STEM: four dimensional scanning transmission electron microscopy
+    4DSTEM: four dimensional scanning transmission electron microscopy
+    BF: bright field
+    DF: dark field
+    HAADF: high angle annular dark field
+    FFT: fast Fourier transform
+    PCI: phase contrast imaging
+    tcBF: tilt corrected bright field STEM
+    SSB: single side band
+  toc:
+    - file: 1.index.md
+    - title: Diffractive Imaging Introduction
+      children:
+        - file: 2.stem-measurements.md
+        - file: 3.phase-problem.md
+        - file: 4.open-source-algorithms.md
+        - file: 5.example-reconstructions.md
+    - title: Phase Retrieval Methods
+      children:
+        - file: 6.center-of-mass-imaging.md
+        - file: 7.tilt-corrected-bf-stem.md
+        - file: 8.direct-ptychography.md
+        - file: 9.iterative-ptychography.md
+    - title: Transfer of Information
+      children:
+        - file: 10.analytical-ctf-ingredients.md
+        - file: 11.center-of-mass-imaging-ctf.md
+        - file: 12.tcbf-ctf.md
+        - file: 13.direct-ptychography-ctf.md
+        - file: 14.iterative-ptychography-ctf.md
+        - file: 15.spectral-signal-to-noise.md
+    - title: Upsampled Direct Ptychography
+      children:
+        - file: 16.upsampled-direct-ptychography.md
+        - file: 17.upsampled-examples.md
+    - title: Conclusions & Outlook
+      children:
+        - file: 18.elemental-microscopy-delft.md
+        - file: 19.acknowledgments.md
+    - title: Notebooks
+      children:
+        - pattern: notebooks/*.ipynb
+site:
+  template: https://github.com/gvarnavi/custom-myst-book-theme.git
+  options:
+    theme: 'dark'
+    hide_theme_toggle: true
+    hide_outline: true
+    hide_title_block: true
+    hide_search: true
+    favicon: ./figures/favicon.ico
+    logo: ./figures/logo.png
+    logo_dark: ./figures/logo.png
+    logo_text: 'gvarnavides.com/2025grc-diffractive-imaging'
