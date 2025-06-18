@@ -65,20 +65,20 @@ project:
       children:
         - file: 2.stem-measurements.md
         - file: 3.phase-problem.md
-        - file: 4.open-source-algorithms.md
+        # - file: 4.open-source-algorithms.md
         - file: 5.example-reconstructions.md
     - title: Phase Retrieval Methods
       children:
         - file: 6.center-of-mass-imaging.md
         - file: 7.tilt-corrected-bf-stem.md
-        - file: 8.direct-ptychography.md
+        # - file: 8.direct-ptychography.md
         - file: 9.iterative-ptychography.md
     - title: Transfer of Information
       children:
         - file: 10.analytical-ctf-ingredients.md
         - file: 11.center-of-mass-imaging-ctf.md
         - file: 12.tcbf-ctf.md
-        - file: 13.direct-ptychography-ctf.md
+        # - file: 13.direct-ptychography-ctf.md
         - file: 14.iterative-ptychography-ctf.md
         - file: 15.spectral-signal-to-noise.md
     - title: Upsampled Direct Ptychography
